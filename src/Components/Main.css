@@ -1,0 +1,988 @@
+@font-face {
+    font-family: Poppins-dark;
+    src: url('../fonts/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: poppins-mid;
+    src: url('../fonts/Poppins-Medium.ttf');
+}
+.NavBar{
+    width:85vw;
+    margin: auto;
+    height:fit-content;
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+    color: white;
+    padding: 0.4rem 2rem 0.5rem 2rem;
+    border-radius: 4rem;
+    box-shadow:0.1rem 0.3rem 0.2rem -0.2rem inset rgb(112, 112, 108),-0.3rem -0.3rem 0.3rem -0.3rem inset rgb(73, 73, 2);
+    transition: .5s ease-in-out;
+}
+    .Logo{
+    font-size: 3rem;
+    font-family: poppins-dark;
+    color:rgb(241, 238, 238);
+    text-shadow:0.1rem 0.1rem 0.25rem black ;
+    position: relative;
+    bottom:0.3rem;
+}
+.TabLinks{
+    width:40%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 0.7rem;
+}
+.TabLink{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color:aquamarine;
+    font-weight: bolder;
+    font-family: poppins-dark;
+    text-shadow:0.1rem 0.1rem 0.25rem black;
+    transition: .3s ease-in-out;
+    max-height: 3.5rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+.TabSmdLinks{
+    display: none;
+}
+.TabBar{
+    display: none;
+}
+.TabLink:hover{
+    box-shadow:0.1rem 0.1rem 0.2rem -0.1rem inset gray,-0.1rem -0.1rem 0.2rem -0.1rem inset gray;
+    border-radius: 0.5rem;
+}
+.TabLink:active{
+    text-shadow: none;
+    color: white;
+    box-shadow: none;
+}
+.MainContent{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow:row;
+    width: 160%;
+    justify-content: space-between;
+    transition: 1.5s ease-in-out;
+}
+.Content1{
+    width:80rem;
+    display: flex;
+    flex-flow: column;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    justify-content: space-between;
+    height: 38rem;
+}
+.Dp{
+    width: 70%;
+    text-align: center;
+}
+.Dp1Photo{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+}
+.Bio{
+    width:70%;
+    background: linear-gradient(to right,rgb(241, 238, 238),cyan);
+    padding: 1rem 0.5rem 1rem 1rem;
+    border-radius:0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem -0.2rem inset black, -0.2rem -0.2rem 0.5rem -0.2rem inset black;
+}
+.BioTag{
+    font-family: poppins-dark;
+    font-size: 2rem;
+    color:white;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+.BioContent{
+    font-family: poppins-mid;
+    font-size: 1.5rem;
+}
+.Content2{
+    width: 70rem;
+    height: 70rem;
+    border-radius: 35rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0.2rem 0.2rem 1rem -0.5rem inset black;
+}
+.Dp2Photo{
+    width: 25rem;
+    height: 25rem;
+    margin-top: 10rem;
+    margin-left: 3rem;
+    position: absolute;
+    transform: translateX(130%);
+    transition: .7s ease-in-out;
+}
+.Dp2{
+    width:fit-content;
+    width: 100%;
+}
+.Skills{
+    width:100%;
+    display: flex;
+    flex-flow: column;
+    margin-left: 2rem;
+    position:relative;
+    /* background: #000; */
+    top: 50%;
+}
+.SkillTag{
+    font-family: poppins-dark;
+    font-size: 2rem;
+    text-align: center;
+    transition: .7s ease-in-out;
+    position: absolute;
+    left: 10rem;
+    font-weight: bold;
+    transform: translateX(510%);
+    color:white;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+.SkillList{
+    text-align: center;
+    list-style:none;
+    margin-top: 1rem;
+    font-family: poppins-mid;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:yellow;
+    text-shadow: 0.1rem 0.1rem 0.2rem red;
+    transition: .7s ease-in-out;
+}
+b{
+    color:yellow;
+    text-shadow: 0.1rem 0.1rem 0.2rem red;
+}
+#skill1{
+    margin-top: 3rem;
+}
+.footer{
+    width:100%;
+    height: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0rem 1.3rem 0rem;
+}
+.MainContent2{
+    width: fit-content;
+    height: 100vh;
+    margin: auto;
+    margin-top: 4vw;
+}
+.ContactHeading{
+    font-size: 3rem;
+    font-family: poppins-dark;
+    text-align: center;
+    color: aquamarine;
+    text-shadow:0.1rem 0.1rem 0.25rem black;
+}
+.ContactCont{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 50%;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    background: transparent;
+}
+#Name{
+    width: 40vw;
+    height: 5vh;
+    border-radius: 0.5rem;
+    background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+    border:none;
+    outline: none;
+    font-family: poppins-mid;
+    box-shadow: 0.2rem 0.2rem 0.4rem -0.2rem inset black,-0.2rem -0.2rem 0.4rem -0.2rem inset black;
+    padding: 0rem 0rem 0rem 0.2rem;
+}
+#email{
+    width: 40vw;
+    height: 5vh; 
+    border-radius: 0.5rem;
+    background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+    border:none;
+    outline: none;
+    font-family: poppins-mid;
+    box-shadow: 0.2rem 0.2rem 0.4rem -0.2rem inset black,-0.2rem -0.2rem 0.4rem -0.2rem inset black;
+    padding: 0rem 0rem 0rem 0.2rem;
+}
+#Des{
+    width: 40vw;
+    height: 25vh;
+    border-radius: 0.5rem;
+    background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+    border:none;
+    outline: none;
+    font-family: poppins-mid;
+    box-shadow: 0.2rem 0.2rem 0.4rem -0.2rem inset black,-0.2rem -0.2rem 0.4rem -0.2rem inset black;
+    padding: 0rem 0rem 0rem 0.2rem;
+}
+.SubBtn{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    border: 1px solid skyblue;
+    outline: none;
+    font-family: poppins-dark;
+    box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem inset black,-0.1rem -0.1rem 0.2rem -0.1rem inset black;
+    margin-left: 45%;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.SubBtn:hover{
+    background: cyan;
+}
+.SubBtn:active{
+    background: white;
+}
+.AboutContainer{
+    display: flex;
+    flex-flow: row;
+    margin-top: 10vh;
+}
+.contents{
+    display: flex;
+    width: 70vw;
+    flex-flow: column;
+    margin-left: 2vw;
+}
+.intro{
+    display: flex;
+    flex-flow: column;
+    height:fit-content;
+    justify-content: space-between;
+    box-shadow: 0.2rem 0.2rem 0.4rem -0.2rem inset black, -0.2rem -0.2rem 0.4rem -0.2rem inset black;
+    border-radius:0.5rem ;
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+.IntroCap{
+    font-size: 2.5vw;
+    font-family: poppins-dark;
+    color: white;
+}
+.IntroContent{
+    font-size:1.5vw;
+    font-family: poppins-mid;
+    color: white;
+}
+.Career{
+    display: flex;
+    flex-flow: column;
+    height:fit-content;
+    justify-content: space-between;
+    box-shadow: 0.2rem 0.2rem 0.4rem -0.2rem inset black, -0.2rem -0.2rem 0.4rem -0.2rem inset black;
+    border-radius:0.5rem ;
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin-top: 5vh;
+}
+.CarrerCap{
+    font-size: 2.5vw;
+    font-family: poppins-dark;
+    color: white; 
+}
+.CarrerContent{
+    font-size:1.5vw;
+    font-family: poppins-mid;
+    color: white;
+}
+.Additional{
+    display: flex;
+    flex-flow: column;
+    height:fit-content;
+    justify-content: space-between;
+    box-shadow: 0.2rem 0.2rem 0.4rem -0.2rem inset black, -0.2rem -0.2rem 0.4rem -0.2rem inset black;
+    border-radius:0.5rem ;
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin-top: 5vh;
+}
+.AdditionalCap{
+    font-size: 2.5vw;
+    font-family: poppins-dark;
+    color: white; 
+}
+.AdditionalContent{
+    font-size:1.5vw;
+    font-family: poppins-mid;
+    color: white;
+}
+@media screen and (min-width:300px) and (max-width:699px){
+   html, body{
+        background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+        overflow-x: hidden;
+        max-height: fit-content;
+        background-repeat: no-repeat;
+    }
+    .NavBar{
+        width:75vw;
+        margin: auto;
+        height:fit-content;
+        margin-top: 0.5rem;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+        color: white;
+        padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+        border-radius: 4rem;
+        box-shadow:0rem 0.15rem 0.15rem -0.15rem inset rgb(73, 73, 2),-0.15rem -0.15rem 0.15rem -0.15rem inset rgb(73, 73, 2);
+    }
+.Logo{
+    font-size: 1.5rem;
+    font-family: poppins-dark;
+    color:rgb(241, 238, 238);
+    text-shadow:0.1rem 0.1rem 0.25rem black ;
+    /* margin-bottom: 0.5rem; */
+    position: relative;
+    bottom: 0rem;
+}
+.TabLinks{
+    width:50%;
+    display:none;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 0.75rem;
+}
+.TabSmdLinks{
+    display: flex;
+    flex-flow: column;
+    width:70vw;
+    justify-content: space-around;
+    margin: auto;
+    text-align: center;
+    z-index: 10;
+    transition: .5s ease-in-out;
+    box-shadow:0rem 0.15rem 0.15rem -0.15rem inset rgb(73, 73, 2),-0.15rem -0.15rem 0.15rem -0.15rem inset rgb(73, 73, 2);
+padding-bottom: 1rem;
+margin-top: -0.2rem;
+}
+.TabSmdLink{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color:aquamarine;
+    font-weight: bolder;
+    font-family: poppins-dark;
+    text-shadow:0.1rem 0.1rem 0.25rem black;
+    transition: .4s ease-in-out;
+    max-height: 3.5rem;
+}
+.TabBar{
+    display: flex;
+    flex-flow: column;
+    width: 2.3rem;
+    height: 2rem;
+    margin-right: 0.6rem;
+    margin-top: 0.1rem;
+    /* box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem inset black, -0.1rem -0.1rem 0.2rem -0.1rem inset black; */
+    padding:0.3rem .2rem 0.3rem .2rem;
+    border-radius: 0.2rem;
+}
+.midBar{
+    width: 2rem;
+    top:.8rem;
+    height:.2rem;
+    position: relative;
+    background:blue;
+    transition: .5s ease-in-out;
+}
+.topBar,
+.lowerBar{
+    position: absolute;
+    background: blue;
+    transition: .5s ease-in-out;
+}
+.lowerBar{
+    width:2rem;
+    height:.2rem;
+    top:2.5rem;
+    /* left: 79.4%; */
+    /* transform: rotate(10deg); */
+}
+.topBar{
+    width:2rem;
+    height: .2rem;
+    margin-top:0.2rem;
+    /* bottom:53.15rem; */
+    /* left: 79.4%; */
+    /* transform: rotate(10deg); */
+}
+.topBarActive{
+    /* left: 79.4%; */
+    top: 1.58rem;
+    background: red;
+    transform: rotate(45deg);
+}
+.midBarHidden{
+    opacity: 0;
+}
+.lowerBarActive{
+    /* left: 79.4%; */
+    top: 1.78rem;
+    background: red;
+    transform: rotate(-45deg);
+}
+.TabLink{
+    font-size: 0.6rem;
+    text-decoration: none;
+    color:aquamarine;
+    font-family: poppins-dark;
+    text-shadow:0.05rem 0.05rem 0.125rem black;
+}
+.MainContent{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow:column;
+    width: 160%;
+    justify-content: space-between;
+    transition: 1.5s ease-in-out;
+    max-height: fit-content;
+}
+.Content1{
+    max-width:100vw;
+    display: flex;
+    flex-flow: column;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    min-height: 40rem;
+}
+.Dp{
+    width:fit-content;
+    padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+    margin: auto;
+    border-radius: 8.5rem;
+    box-shadow: 0.2rem 0.1rem 0.3rem -0.2rem inset gray, -0.2rem -0.1rem 0.3rem -0.2rem inset gray;
+}
+.Dp1Photo{
+    width: 17rem;
+    height: 17rem;
+    border-radius: 8.5rem;
+    
+}
+.Bio{
+    min-width: 90%;
+    background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+    padding: 1rem 0.5rem 1rem 1rem;
+    border-radius:0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem -0.2rem inset black;
+    min-height:fit-content;
+}
+.BioTag{
+    font-family: poppins-dark;
+    font-size: 2rem;
+}
+.BioContent{
+    font-family: poppins-mid;
+    font-size: 1.5rem;
+    min-width: 100%;
+    min-height: 100%;
+}
+.Content2{
+    width: 45rem;
+    height: 45rem;
+    border-radius: 22.5rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0.5rem 0.5rem 1rem -0.5rem inset gray;
+    margin-top: 2rem;
+    margin-left: 55vw;
+    transition: 1.5s ease-in-out;
+}
+.Dp2Photo{
+    width: 17rem;
+    height: 17rem;
+    margin-top: 4.5rem;
+    margin-left: 4rem;
+}
+.Skills{
+    width: 15rem;
+    display: flex;
+    flex-flow: column;
+    margin-left: 2rem;
+}
+.SkillTag{
+    font-family: poppins-dark;
+    font-size: 1.5rem;
+    text-align: center;
+    left:7.7rem;
+}
+.SkillList{
+    text-align: center;
+    list-style:none;
+    margin-top: 1rem;
+    font-family: poppins-mid;
+    font-size: 1rem;
+    position: relative;
+    left: 24.5rem;
+}
+#Name{
+    width: 80vw;
+    height: 5vh;
+    border-radius: 0.5rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    border: 1px solid skyblue;
+    outline: none;
+    font-family: poppins-mid;
+    box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem inset black,-0.1rem -0.1rem 0.2rem -0.1rem inset black;
+    padding: 0rem 0rem 0rem 0.2rem;
+}
+#email{
+    width: 80vw;
+    height: 5vh; 
+    border-radius: 0.5rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    border: 1px solid skyblue;
+    outline: none;
+    font-family: poppins-mid;
+    box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem inset black,-0.1rem -0.1rem 0.2rem -0.1rem inset black;
+    padding: 0rem 0rem 0rem 0.2rem;
+}
+#Des{
+    width: 80vw;
+    height: 25vh;
+    border-radius: 0.5rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    border: 1px solid skyblue;
+    outline: none;
+    font-family: poppins-mid;
+    box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem inset black,-0.1rem -0.1rem 0.2rem -0.1rem inset black;
+    padding: 0rem 0rem 0rem 0.2rem;
+}
+.SubBtn{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    border: 1px solid skyblue;
+    outline: none;
+    font-family: poppins-dark;
+    box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem inset black,-0.1rem -0.1rem 0.2rem -0.1rem inset black;
+    margin-left:33vw;
+}
+.contents{
+    display: flex;
+    width: 70vw;
+    flex-flow: column;
+    margin-left: 2vw;
+    margin: auto;
+}
+.intro{
+    display: flex;
+    flex-flow: column;
+    height:fit-content;
+    justify-content: space-between;
+    box-shadow: 0.2rem 0.2rem 0.4rem -0.2rem inset black, -0.2rem -0.2rem 0.4rem -0.2rem inset black;
+    border-radius:0.5rem ;
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+.IntroCap{
+    font-size: 4vw;
+    font-family: poppins-dark;
+    color: white;
+}
+.IntroContent{
+    font-size:3vw;
+    font-family: poppins-mid;
+    color: white;
+}
+.Career{
+    display: flex;
+    flex-flow: column;
+    height:fit-content;
+    justify-content: space-between;
+    box-shadow: 0.2rem 0.2rem 0.4rem -0.2rem inset black, -0.2rem -0.2rem 0.4rem -0.2rem inset black;
+    border-radius:0.5rem ;
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin-top: 5vh;
+}
+.CarrerCap{
+    font-size: 4vw;
+    font-family: poppins-dark;
+    color: white; 
+}
+.CarrerContent{
+    font-size:3vw;
+    font-family: poppins-mid;
+    color: white;
+}
+.Additional{
+    display: flex;
+    flex-flow: column;
+    height:fit-content;
+    justify-content: space-between;
+    box-shadow: 0.2rem 0.2rem 0.4rem -0.2rem inset black, -0.2rem -0.2rem 0.4rem -0.2rem inset black;
+    border-radius:0.5rem ;
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.603);
+    margin-top: 5vh;
+}
+.AdditionalCap{
+    font-size: 4vw;
+    font-family: poppins-dark;
+    color: white; 
+}
+.AdditionalContent{
+    font-size:3vw;
+    font-family: poppins-mid;
+    color: white;
+}
+}
+@media screen and (min-width:700px) and (max-width:900px){
+    html, body{
+        background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+        overflow-x: hidden;
+        max-height: fit-content;
+        background-repeat: no-repeat;
+    }
+    .NavBar{
+        width:80vw;
+        margin: auto;
+        height:fit-content;
+        margin-top: 1rem;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+        color: white;
+        padding: 0.3rem 0.7rem 0.5rem 0.7rem;
+        border-radius: 4rem;
+        box-shadow:0.2rem 0.3rem 0.3rem -0.3rem inset gray,-0.3rem -0.3rem 0.3rem -0.3rem inset gray;
+    }
+.Logo{
+    font-size: 2rem;
+    font-family: poppins-dark;
+    color:rgb(241, 238, 238);
+    text-shadow:0.1rem 0.1rem 0.25rem black ;
+}
+.TabLinks{
+    width:55%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 0.7rem;
+}
+.TabLink{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color:aquamarine;
+    font-family: poppins-dark;
+    text-shadow:0.03rem 0.03rem 0.10rem black;
+}
+.TabLink:hover{
+    box-shadow:0.1rem 0.1rem 0.2rem -0.1rem inset gray,-0.1rem -0.1rem 0.2rem -0.1rem inset gray;
+    border-radius: 0.5rem;
+}
+.TabLink:active{
+    text-shadow: none;
+    color: white;
+    box-shadow: none;
+}
+.MainContent{
+    margin-top: 1rem;
+    display: flex;
+    flex-flow:row;
+    width: 160%;
+    justify-content: space-between;
+    transition: 1.5s ease-in-out;
+}
+.Content1{
+    min-width:80vw;
+    max-width:80vw;
+    display: flex;
+    flex-flow: column;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+    height: 38rem;
+}
+.Dp{
+    width: 70%;
+    text-align: center;
+}
+.Dp1Photo{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10rem;
+}
+.Bio{
+    min-width:70%;
+    background: linear-gradient(to right,rgb(241, 238, 238),cyan);
+    padding: 1rem 0.5rem 1rem 1rem;
+    border-radius:0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem -0.2rem inset black, -0.2rem -0.2rem 0.5rem -0.2rem inset black;
+}
+.BioTag{
+    font-family: poppins-dark;
+    font-size: 2rem;
+    color:white;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+.BioContent{
+    font-family: poppins-mid;
+    font-size: 1.5rem;
+}
+.Content2{
+    min-width: 40rem;
+    height: 40rem;
+    border-radius: 20rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    display: flex;
+    flex-flow: column;
+    position:relative;
+    right:8vw;
+    box-shadow: 0.2rem 0.2rem 1rem -0.5rem inset black;
+}
+.Dp2Photo{
+    width: 15rem;
+    height: 15rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    position: absolute;
+    transform: translateX(110%);
+    transition: .7s ease-in-out;
+}
+.Dp2{
+    width:fit-content;
+    width: 100%;
+}
+.Skills{
+    width:100%;
+    display: flex;
+    flex-flow: column;
+    position:relative;
+    right:12%;
+    /* background: #000; */
+    top: 50%;
+}
+.SkillTag{
+    font-family: poppins-dark;
+    font-size: 2rem;
+    text-align: center;
+    transition: .7s ease-in-out;
+    position: absolute;
+    left: 10rem;
+    font-weight: bold;
+    transform: translateX(440%);
+    color:white;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+.SkillList{
+    text-align: center;
+    list-style:none;
+    margin-top: 1rem;
+    font-family: poppins-mid;
+    font-size: 1rem;
+    position: relative;
+    left: 15rem;
+}
+b{
+    color:yellow;
+    text-shadow: 0.1rem 0.1rem 0.2rem red;
+}
+#skill1{
+    margin-top: 3rem;
+}
+.footer{
+    width:100%;
+    height: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0rem 1.3rem 0rem;
+}
+#Name{
+    width: 70vw;
+    height: 5vh;
+    border-radius: 0.5rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    border: 1px solid skyblue;
+    outline: none;
+    font-family: poppins-mid;
+    box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem inset black,-0.1rem -0.1rem 0.2rem -0.1rem inset black;
+    padding: 0rem 0rem 0rem 0.2rem;
+}
+#email{
+    width: 70vw;
+    height: 5vh; 
+    border-radius: 0.5rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    border: 1px solid skyblue;
+    outline: none;
+    font-family: poppins-mid;
+    box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem inset black,-0.1rem -0.1rem 0.2rem -0.1rem inset black;
+    padding: 0rem 0rem 0rem 0.2rem;
+}
+#Des{
+    width: 70vw;
+    height: 25vh;
+    border-radius: 0.5rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    border: 1px solid skyblue;
+    outline: none;
+    font-family: poppins-mid;
+    box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem inset black,-0.1rem -0.1rem 0.2rem -0.1rem inset black;
+    padding: 0rem 0rem 0rem 0.2rem;
+}
+.SubBtn{
+    width: 6rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    border: 1px solid skyblue;
+    outline: none;
+    font-family: poppins-dark;
+    box-shadow: 0.1rem 0.1rem 0.2rem -0.1rem inset black,-0.1rem -0.1rem 0.2rem -0.1rem inset black;
+    margin-left:31vw;
+}
+}
+@media screen and (min-width:901px) and (max-width:1170px){
+    html, body{
+        background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+        overflow-x: hidden;
+        max-height: fit-content;
+        background-repeat: no-repeat;
+    }
+    .NavBar{
+        width:85vw;
+        margin: auto;
+        height:fit-content;
+        margin-top: 1rem;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        background:linear-gradient(to right,rgb(241, 238, 238),cyan);
+        color: white;
+        padding: 0.4rem 1rem 0.4rem 1rem;
+        border-radius: 4rem;
+        box-shadow:0.3rem 0.3rem 0.3rem -0.3rem inset gray,-0.3rem -0.3rem 0.3rem -0.3rem inset gray;
+    }
+.Logo{
+    font-size: 3rem;
+    font-family: poppins-dark;
+    color:rgb(241, 238, 238);
+    text-shadow:0.1rem 0.1rem 0.25rem black;
+}
+.TabLinks{
+    width:50%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 0.9rem;
+}
+.TabLink{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:aquamarine;
+    font-family: poppins-dark;
+    text-shadow:0.05rem 0.05rem 0.125rem black;
+}
+.Content1{
+    min-width:60vw;
+    max-width:60vw;
+    display: flex;
+    flex-flow: column;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    justify-content: space-between;
+    height: 38rem;
+}
+.Dp{
+    width: 70%;
+    text-align: center;
+}
+.Dp1Photo{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 10rem;
+}
+.Bio{
+    width:70%;
+    background: linear-gradient(to right,rgb(241, 238, 238),cyan);
+    padding: 1rem 0.5rem 1rem 1rem;
+    border-radius:0.5rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem -0.2rem inset black, -0.2rem -0.2rem 0.5rem -0.2rem inset black;
+}
+.BioTag{
+    font-family: poppins-dark;
+    font-size: 2rem;
+    color:white;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+.BioContent{
+    font-family: poppins-mid;
+    font-size: 1.5rem;
+}
+.Content2{
+    width: 60rem;
+    height: 60rem;
+    border-radius: 30rem;
+    background:linear-gradient(to bottom,rgb(241, 238, 238),cyan);
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0.2rem 0.2rem 1rem -0.5rem inset black;
+}
+.Dp2Photo{
+    width: 25rem;
+    height: 25rem;
+    margin-top: 6rem;
+    margin-left: 4rem;
+    position: absolute;
+    transform: translateX(130%);
+    transition: .7s ease-in-out;
+}
+.Dp2{
+    width:fit-content;
+    width: 100%;
+}
+.Skills{
+    width:100%;
+    display: flex;
+    flex-flow: column;
+    margin-left: 0.4rem;
+    position:relative;
+    /* background: #000; */
+    top: 52%;
+}
+.SkillTag{
+    font-family: poppins-dark;
+    font-size: 2rem;
+    text-align: center;
+    transition: .7s ease-in-out;
+    position: absolute;
+    left: 12.4rem;
+    margin-top: 0rem;
+    font-weight: bold;
+    transform: translateX(510%);
+    color:white;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+}
+.SkillList{
+    text-align: center;
+    list-style:none;
+    margin-top: 1rem;
+    font-family: poppins-mid;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 15rem;
+    color:yellow;
+    text-shadow: 0.1rem 0.1rem 0.2rem red;
+    transition: .7s ease-in-out;
+}
+}
